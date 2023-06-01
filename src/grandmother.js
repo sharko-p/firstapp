@@ -5,9 +5,7 @@ import Mather from './mather';
 class Grandmother extends React.Component {
   render(){
     return (
-    <div >
-      
-        
+    <div >       
         <p>
           Я освою библиотеку {this.props.name}
         </p>
