@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Grandmother from './grandmother';
+import Grandmother from './Grandmother';
 
 
 const link=<a
@@ -20,6 +20,7 @@ function App() {
       
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        
         {link}
         <Grandmother name={'React'}/>
       </header>

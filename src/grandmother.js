@@ -1,16 +1,19 @@
 import React from 'react';
-import Mather from './mather';
+import Mother from './Mother';
+
 
 
 class Grandmother extends React.Component {
   render(){
     return (
-    <div >       
+    <div >
+      
+        
         <p>
           Я освою библиотеку {this.props.name}
         </p>
          
-        <Mather />
+        <Mother />
 
     </div>
   );
