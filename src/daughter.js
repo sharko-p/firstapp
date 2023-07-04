@@ -1,12 +1,12 @@
-import React from "react"
+// import React from "react"
 
-const Daughter=({city,year})=>
-<div>
-    <footer>
-        <p>© {city.name} {year} </p>
-        </footer>
-        </div>
+// const Daughter=({city,year})=>
+// <div>
+//     <footer>
+//         <p>© {city.name} {year} </p>
+//         </footer>
+//         </div>
 
-export default Daughter
+// export default Daughter
 
 
