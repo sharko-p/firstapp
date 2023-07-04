@@ -37,7 +37,7 @@ const State = () => {
             <code className="codeStyle">{stateCode5}</code>
         </pre>
         {count}
-     <button onClick={()=>setState(count+1)}>tap</button>
+     <button onClick={()=>setState(count+1)} className="stateButtonStyle">tap</button>
         <p>Примером работы со state является счётчик, который изменяется при нажатии на кнопку.
 Код имеет следующий вид:
 </p>
