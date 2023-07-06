@@ -8,24 +8,27 @@ import './App.css';
 
 
 
-const Header=()=>{
+const Header = () => {
     const styles = {
         // backgroundColor: "red",
         // color: "white",
-display:'flex',
-'justify-content':'flex-end',
-        
+
+        // display: 'flex',
+        // 'justify-content': 'flex-end',
+
     }
-    const stylesImg={
+    const stylesImgReact = {
         height: '50px'
     }
-    return(
-        <div className="header">
-       <header >
-       <div style={styles}> <img style={stylesImg} src={logo} className="App-logo"  alt="logo" /></div>
-        
-           
-        </header>
+    return (
+        <div >
+            <header className="header">
+                
+                <a  href="./index.html">
+                    <img className="homeButtonStyle" src="../home.png" alt="icon logotip" />
+                </a>
+                <div style={styles}> <img style={stylesImgReact} src={logo} className="App-logo" alt="logo" /></div>
+            </header>
         </div>
     )
 }

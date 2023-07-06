@@ -42,8 +42,19 @@
 
   .header{
     background-color: rgb(51, 61, 123);
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    
   }
+ 
 
+  .homeButtonStyle {
+
+    width: 40px;
+    margin: 10px;
+}
+  
   .Navigation-list {
     list-style-type: none;
 
