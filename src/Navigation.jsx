@@ -1,65 +1,70 @@
-import React, {Fragment} from 'react';
-import Component from './Component';
-import Props from './Props';
-import  State  from './State'
-import  LifeCycle  from './LifeCycle'
-import  Events  from './Events'
-import  Fragments  from './Fragments'
-import  Key  from './Key'
-import  Refs  from './Refs'
-import  ReactMemo  from './ReactMemo'
-import  UseContext  from './UseContext'
-import  UseMemo  from './UseMemo'
-import  Router  from './Router'
-import FunctionComponent from './FunctionComponent';
-import ClassComponent from './ClassComponent';
-import PureComponent from './PureComponent';
-import {NavLink ,Routes, Route, Outlet } from 'react-router-dom';
-import './myProject.css';
+import React from "react";
+import Component from "./pages/component-page/Component";
+import Props from "./pages/props-page/Props";
+import State from "./pages/state-page/State";
+import LifeCycle from "./pages/lifeCycle-page/LifeCycle";
+import Events from "./pages/events-page/Events";
+import Fragments from "./pages/fragment-page/Fragments";
+import Key from "./pages/key-page/Key";
+import Refs from "./pages/refs-page/Refs";
+import ReactMemo from "./pages/reactMemo-page/ReactMemo";
+import UseContext from "./pages/useContext-page/UseContext";
+import UseMemo from "./pages/useMemo-page/UseMemo";
+import Router from "./pages/router-page/Router";
+import FunctionComponent from "./pages/component-page/FunctionComponent";
+import ClassComponent from "./pages/component-page/ClassComponent";
+import PureComponent from "./pages/component-page/PureComponent";
+import { Routes, Route } from "react-router-dom";
+import "./myProject.css";
+import Navibar from "./NaviBar";
 
-const Navigation=()=>{
-    return (
-       <Fragment >
-          <ul className="Navigation-list">
-             <li> <NavLink to="/Component" activeClassName="active">Component</NavLink></li>    
-             <li><NavLink to="/Props" activeClassName="active">Props</NavLink></li>          
-             <li><NavLink to="/State" activeClassName="active">State</NavLink></li>          
-             <li><NavLink to="/LifeCycle" activeClassName="active">LifeCycle</NavLink></li>       
-             <li><NavLink to="/Events" activeClassName="active">Events</NavLink></li>          
-             <li><NavLink to="/Fragments" activeClassName="active">Fragment</NavLink></li>        
-             <li><NavLink to="/Key" activeClassName="active">Key</NavLink></li>             
-             <li><NavLink to="/Refs" activeClassName="active">Refs</NavLink></li>             
-             <li><NavLink to="/ReactMemo" activeClassName="active">ReactMemo</NavLink></li>        
-             <li><NavLink to="/UseContext" activeClassName="active">UseContext</NavLink></li>       
-             <li><NavLink to="/UseMemo" activeClassName="active">UseMemo</NavLink></li>          
-             <li><NavLink to="/Router" activeClassName="active">Router</NavLink></li>           
-         </ul>
-           <Routes>
-             <Route path="/Component" element={<Component />}>
-             <Route path="/Component/FunctionComponent" element={<FunctionComponent />} />
-             <Route path="/Component/ClassComponent" element={<ClassComponent />} />
-             <Route path="/Component/PureComponent" element={<PureComponent />} />
-            </Route> 
-             <Route path="/Props" element={<Props />} /> 
-             <Route path="/State" element={<State />} /> 
-             <Route path="/LifeCycle" element={<LifeCycle />} /> 
-             <Route path="/Events" element={<Events />} /> 
-             <Route path="/Fragments" element={<Fragments />} /> 
-             <Route path="/Key" element={<Key />} /> 
-             <Route path="/Refs" element={<Refs />} /> 
-             <Route path="/ReactMemo" element={<ReactMemo />} /> 
-             <Route path="/UseContext" element={<UseContext />} /> 
-             <Route path="/UseMemo" element={<UseMemo />} /> 
-             <Route path="/Router" element={<Router />} /> 
-           </Routes>
-        <Outlet />
+const paths = {
+  Component: "/Component",
+  FunctionComponent: "/Component/FunctionComponent",
+  ClassComponent: "/Component/ClassComponent",
+  PureComponent: "/Component/PureComponent",
+  Props: "/Props",
+  State: "/State",
+  LifeCycle: "/LifeCycle",
+  Events: "/Events",
+  Fragments: "/Fragments",
+  Key: "/Key",
+  Refs: "/Refs",
+  ReactMemo: "/ReactMemo",
+  UseContext: "/UseContext",
+  UseMemo: "/UseMemo",
+  Router: "/Router",
+};
 
-        </Fragment>
+const Navigation = () => {
+  const publicRoutes = [
+    { path: paths.Component, element: <Component /> },
+    { path: paths.FunctionComponent, element: <FunctionComponent /> },
+    { path: paths.ClassComponent, element: <ClassComponent /> },
+    { path: paths.PureComponent, element: <PureComponent /> },
+    { path: paths.Props, element: <Props /> },
+    { path: paths.State, element: <State /> },
+    { path: paths.LifeCycle, element: <LifeCycle /> },
+    { path: paths.Events, element: <Events /> },
+    { path: paths.Fragments, element: <Fragments /> },
+    { path: paths.Key, element: <Key /> },
+    { path: paths.Refs, element: <Refs /> },
+    { path: paths.ReactMemo, element: <ReactMemo /> },
+    { path: paths.UseContext, element: <UseContext /> },
+    { path: paths.UseMemo, element: <UseMemo /> },
+    { path: paths.Router, element: <Router /> },
+  ];
 
-    )
-}
+  return (
+    <>
+      <Navibar />
+      <Routes>
+        {publicRoutes.map((route,index) => (
+          <Route path={route.path} element={route.element} key={index} />
+        ))}
+      </Routes>
+    </>
+  );
+};
 
-
-export default Navigation
-
-
+export default Navigation;

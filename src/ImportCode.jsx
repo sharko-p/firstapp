@@ -1,5 +1,3 @@
-
-
 export const classComponentCode1 = `
 import Mother from './Mother';
 const link = (
@@ -50,7 +48,7 @@ export const FunctionComponentСode1 = `const link = (
     </div>
   );
 
-   export default Grandmother`
+   export default Grandmother`;
 
 export const propsCode1 = `const Func=(props)=>{
     return (<div>
@@ -59,7 +57,7 @@ export const propsCode1 = `const Func=(props)=>{
      </div> )
     }
     export default Func
-    `
+    `;
 export const propsCode2 = `const Func=(props)=>{
         const {name,age}=props
         return (<div>
@@ -68,12 +66,12 @@ export const propsCode2 = `const Func=(props)=>{
          </div> )
         }
         export default Func
-        `
+        `;
 export const propsCode3 = `const Func=({name,age})=>{<div>{name}{age}
     </div> 
     }
     export default Func
-    `
+    `;
 export const propsCode4 = `
     class Welcome extends React.Component {
         render() {
@@ -81,14 +79,14 @@ export const propsCode4 = `
         }
     }
 export default Welcome
-`
+`;
 export const propsCode5 = `function Welcome (props) {
 return <h1> Привет, {props.name}</h1>;
 }
 const element = <Welcome name="Алиса" />;
 ReactDOM.render(element, document.getElementById('root')); 
-`
-export const propsCode6 = `<Welcome name="Алиса"> `
+`;
+export const propsCode6 = `<Welcome name="Алиса"> `;
 
 export const stateCode1 = `class St extends React.Component {
   state ={ 
@@ -106,12 +104,12 @@ export const stateCode1 = `class St extends React.Component {
     )
   }
 }
-export default St;`
+export default St;`;
 
-export const stateCode2 = `<button onClick={()=>this.setState({count: this.state.count+1})}> Click `
-export const stateCode3 = `<button onClick={()=>this.setState((state)=>({count+1}))}>Click</button>`
-export const stateCode4 = `import {useState} from 'react';`
-export const stateCode5 = `const [name, setName] = useState('Mark');`
+export const stateCode2 = `<button onClick={()=>this.setState({count: this.state.count+1})}> Click `;
+export const stateCode3 = `<button onClick={()=>this.setState((state)=>({count+1}))}>Click</button>`;
+export const stateCode4 = `import {useState} from 'react';`;
+export const stateCode5 = `const [name, setName] = useState('Mark');`;
 export const stateCode6 = `import React, {useState} from "react";
 
 const St=({name,age})=>{
@@ -121,19 +119,19 @@ const St=({name,age})=>{
     <button onClick={()=>setState(count+1)}>tap</button>
   </div>
 }
- export default St`
+ export default St`;
 export const liveCycleCode1 = `constructor(props) {
   super(props);
   this.state = { counter: 0 };
   this.handleClick = this.handleClick.bind(this);
-}`
+}`;
 export const liveCycleCode2 = `render () {
   return (
       <div>
           'Hello'
       </div>
   )
-}`
+}`;
 export const liveCycleCode3 = ` import React from "react";
 
 class Cycle extends React.Component{
@@ -174,7 +172,7 @@ class Cycle2 extends React.Component{
     componentWillUnmount(){console.log('componentWillUnmount')}
 }
 
-export default Cycle`
+export default Cycle`;
 export const liveCycleCode4 = `import React,{useState, useEffect} from "react";
 
 const Cycle=({a,b})=>{
@@ -195,12 +193,12 @@ const Cycle=({a,b})=>{
     </div>)
 }
 
-export default Cycle`
+export default Cycle`;
 export const eventsCode1 = `<button onClick={()=>console.log('hello') }>Click</button>
 
-<input onChange={(event)=>console.log(event.target.value)}/>`
+<input onChange={(event)=>console.log(event.target.value)}/>`;
 
-export const fragmentsCode1 = `import { Fragment } from 'react';`
+export const fragmentsCode1 = `import { Fragment } from 'react';`;
 export const fragmentsCode2 = `class ChildComponent extends React.Component {
   render() {
       return (
@@ -209,7 +207,7 @@ export const fragmentsCode2 = `class ChildComponent extends React.Component {
           </Fragment>
       )
   }
-}`
+}`;
 export const fragmentsCode3 = `class ChildComponent extends React.Component {
   render() {
       return (
@@ -218,7 +216,7 @@ export const fragmentsCode3 = `class ChildComponent extends React.Component {
           </>
       )
   }
-}`
+}`;
 export const fragmentsCode4 = `import React, {Fragment} from "react"
 
 const Fragments=()=>{
@@ -227,7 +225,7 @@ return <Fragment>
 <p>рано вставать</p>
 </Fragment>}
 
-export default Fragments`
+export default Fragments`;
 
 export const RefCode1 = `class MyComponent extends React.Component {
   constructor(props) {
@@ -237,7 +235,7 @@ export const RefCode1 = `class MyComponent extends React.Component {
   render() {
     return <div ref={this.myRef} />;
   }
-}`
+}`;
 
 export const RefCode2 = `import React,{useRef,useEffect} from "react";
 
@@ -252,7 +250,7 @@ return <>
 </>
 }
 
-export default Ref;`
+export default Ref;`;
 
 export const keyCode1 = `import React, {Fragment} from "react";
 import Fragments2 from "./FregmentKey copy";
@@ -277,7 +275,7 @@ const Fragments2=({text})=>{
   }
 
 
-export default Fragments2`
+export default Fragments2`;
 export const reactMemoCode1 = `
 import React,{useState} from "react";
 
@@ -290,8 +288,7 @@ const MemoPure=()=>{
     </>
 }
 
-export default React.memo(MemoPure)`
-
+export default React.memo(MemoPure)`;
 
 export const reactMemoCode2 = `
 import React from "react";
@@ -310,15 +307,15 @@ class MemoPure extends React.PureComponent{
             )
           }
 }
-export default MemoPure`
+export default MemoPure`;
 
-export const UseMemoCode1 = `const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);`
+export const UseMemoCode1 = `const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);`;
 
 export const UseContextCode1 = `
 import React from "react";
 const MyContext = React.createContext();
 
-export default MyContext`
+export default MyContext`;
 
 export const UseContextCode2 = `import React from "react";
 import MyContext from "./Conxext"
@@ -334,7 +331,7 @@ const Mother=()=>{
   )
 }
 
-export default Mother`
+export default Mother`;
 
 export const UseContextCode3 = `import React from "react";
 import MyContext from "./Conxext"
@@ -350,7 +347,7 @@ const Son=(name)=>{
   </>
   )
 }
-export default Son`
+export default Son`;
 
 export const UseContextCode4 = `import React, { createContext, useContext } from "react";
 
@@ -374,10 +371,10 @@ const App = () => {  // Корневой компонент, в котором �
   return <ParentComponent />;
 };
 
-export default App;`
+export default App;`;
 
-export const routeCode1 = `npm install react-router-dom@next`
-export const routeCode2 = `import { BrowserRouter } from 'react-router-dom';`
+export const routeCode1 = `npm install react-router-dom@next`;
+export const routeCode2 = `import { BrowserRouter } from 'react-router-dom';`;
 export const routeCode3 = `import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -388,7 +385,7 @@ ReactDOM.render(
     <App />
   </BrowserRouter>,
   document.getElementById('root')
-);`
+);`;
 export const routeCode4 = `
 import React from 'react';
 import Component from './Component';
@@ -422,7 +419,7 @@ const Navigation=()=>{
     )
 }
 
-export default Navigation`
+export default Navigation`;
 export const routeCode5 = `import { useNavigate } from 'react-router-dom';
 
 // ...
@@ -440,4 +437,4 @@ const Home = () => {
       <button onClick={handleClick}>Перейти к странице О нас</button>
     </div>
   );
-};`
+};`;

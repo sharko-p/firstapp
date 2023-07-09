@@ -1,8 +1,7 @@
 import React from "react";
-import {classComponentCode1} from "./ImportCode";
-import './myProject.css';
+import { classComponentCode1 } from "../../ImportCode";
+import "../../myProject.css";
 const ClassComponent = () => {
-  
   return (
     <>
       <h2> Class Component</h2>
@@ -15,9 +14,3 @@ const ClassComponent = () => {
 };
 
 export default ClassComponent;
-
-
-
-
-
-
