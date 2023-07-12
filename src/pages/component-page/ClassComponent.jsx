@@ -1,6 +1,7 @@
 import React from "react";
 import { classComponentCode1 } from "../../ImportCode";
 import "../../myProject.css";
+
 const ClassComponent = () => {
   return (
     <>

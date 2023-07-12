@@ -1,7 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./index.css";
-import "./App.css";
+import logo from "../assets/logo.svg";
+import home from "../assets/home.png";
+import "../index.css";
+import "../App.css";
 
 const Header = () => {
   const stylesImgReact = {
@@ -10,12 +11,8 @@ const Header = () => {
   return (
     <div>
       <header className="header">
-        <a href="./index.html">
-          <img
-            className="homeButtonStyle"
-            src="../home.png"
-            alt="icon logotip"
-          />
+        <a href="index.html">
+          <img className="homeButtonStyle" src={home} alt="buttonHome" />
         </a>
         <div>
           {" "}
@@ -32,5 +29,3 @@ const Header = () => {
 };
 
 export default Header;
-
-

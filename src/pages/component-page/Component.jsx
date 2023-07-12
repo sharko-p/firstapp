@@ -1,6 +1,7 @@
 import React from "react";
 import "../../myProject.css";
 import { NavLink, Outlet } from "react-router-dom";
+
 const Component = () => {
   return (
     <>

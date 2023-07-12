@@ -8,6 +8,7 @@ import {
   propsCode6,
 } from "../../ImportCode";
 import "../../myProject.css";
+
 const Props = () => {
   return (
     <>

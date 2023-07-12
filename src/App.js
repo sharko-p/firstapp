@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import Navigation from "./Navigation";
-import Header from "./Header";
+import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 import "./myProject.css";
 
 const App = () => {
