@@ -1,6 +1,6 @@
 import React from "react";
 import { reactMemoCode2 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const PureComponent = () => {
   return (

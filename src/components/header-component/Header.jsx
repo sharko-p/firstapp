@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../assets/logo.svg";
-import home from "../assets/home.png";
-import "../index.css";
-import "../App.css";
+import logo from "../../assets/logo.svg";
+import home from "../../assets/home.png";
+import "../../styles/index.css";
+import "../../styles/App.css";
 
 const Header = () => {
   const stylesImgReact = {

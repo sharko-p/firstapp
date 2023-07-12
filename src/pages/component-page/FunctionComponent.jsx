@@ -1,6 +1,6 @@
 import React from "react";
 import { FunctionComponentСode1 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const FunctionComponent = () => {
   return (

@@ -7,7 +7,7 @@ import {
   stateCode5,
   stateCode6,
 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const State = () => {
   const [count, setCount] = useState(0);

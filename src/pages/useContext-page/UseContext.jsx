@@ -5,7 +5,7 @@ import {
   UseContextCode3,
   UseContextCode4,
 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const UseContext = () => {
   return (

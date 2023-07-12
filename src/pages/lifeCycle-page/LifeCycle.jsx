@@ -5,7 +5,7 @@ import {
   liveCycleCode3,
   liveCycleCode4,
 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const LifeCycle = () => {
   return (

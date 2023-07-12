@@ -7,7 +7,7 @@ import {
   propsCode5,
   propsCode6,
 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const Props = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 import {
   routeCode1,
   routeCode2,

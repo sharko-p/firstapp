@@ -1,6 +1,6 @@
 import React from "react";
 import { reactMemoCode1, reactMemoCode2 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const ReactMemo = () => {
   return (

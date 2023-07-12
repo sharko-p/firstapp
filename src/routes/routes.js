@@ -1,4 +1,4 @@
-import React from "react";
+import { paths } from '../components/paths-component/paths';
 import Component from "../pages/component-page/Component";
 import Props from "../pages/props-page/Props";
 import State from "../pages/state-page/State";
@@ -14,13 +14,8 @@ import Router from "../pages/router-page/Router";
 import FunctionComponent from "../pages/component-page/FunctionComponent";
 import ClassComponent from "../pages/component-page/ClassComponent";
 import PureComponent from "../pages/component-page/PureComponent";
-import { Routes, Route } from "react-router-dom";
-import "../myProject.css";
-import Navibar from "./NaviBar";
-import { paths } from "./paths";
 
-const Navigation = () => {
-  const publicRoutes = [
+export const publicRoutes = [
     { path: paths.Component, element: <Component /> },
     { path: paths.FunctionComponent, element: <FunctionComponent /> },
     { path: paths.ClassComponent, element: <ClassComponent /> },
@@ -37,17 +32,3 @@ const Navigation = () => {
     { path: paths.UseMemo, element: <UseMemo /> },
     { path: paths.Router, element: <Router /> },
   ];
-
-  return (
-    <>
-      <Navibar />
-      <Routes>
-        {publicRoutes.map((route) => (
-          <Route path={route.path} element={route.element} key={route.path} />
-        ))}
-      </Routes>
-    </>
-  );
-};
-
-export default Navigation;

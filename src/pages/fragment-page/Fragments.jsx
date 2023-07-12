@@ -5,7 +5,7 @@ import {
   fragmentsCode3,
   fragmentsCode4,
 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const Fragments = () => {
   return (

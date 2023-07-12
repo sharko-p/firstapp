@@ -1,6 +1,6 @@
 import React from "react";
 import { classComponentCode1 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const ClassComponent = () => {
   return (

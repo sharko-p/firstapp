@@ -1,6 +1,6 @@
 import React from "react";
 import { keyCode1 } from "../../ImportCode";
-import "../../myProject.css";
+import "../../styles/myProject.css";
 
 const Key = () => {
   return (
