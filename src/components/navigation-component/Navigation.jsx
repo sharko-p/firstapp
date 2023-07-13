@@ -5,8 +5,6 @@ import Navibar from "./../naviBar-component/NaviBar";
 import { publicRoutes } from "../../routes/routes";
 
 const Navigation = () => {
-  
-
   return (
     <>
       <Navibar />

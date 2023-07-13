@@ -7,7 +7,6 @@ const Component = () => {
     <>
       <h2> Component</h2>
       <p>
-        {" "}
         Компоненты позволяют разбить интерфейс на независимые части, про которые
         легко думать в отдельности. Их можно складывать вместе и использовать
         несколько раз. Во многом компоненты ведут себя как обычные функции
@@ -19,7 +18,6 @@ const Component = () => {
 
       <ul className="Navigation-list">
         <li>
-          {" "}
           <NavLink to="/Component/FunctionComponent">
             Function Component
           </NavLink>
